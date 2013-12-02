@@ -1,0 +1,532 @@
+110,1,extended,permit,udp,host 10.66.129.135,,host 171.71.180.230,range 2055 2065,,,,,access-list 110 extended permit udp host 10.66.129.135 host 171.71.180.230 range 2055 2065 
+110,2,extended,permit,udp,host 10.66.129.136,,host 171.71.180.230,range 2055 2065,,,,,access-list 110 extended permit udp host 10.66.129.136 host 171.71.180.230 range 2055 2065 
+110,3,extended,permit,udp,10.61.32.0 255.255.255.224,,host 144.254.226.12,range 2055 2065,,,,,access-list 110 extended permit udp 10.61.32.0 255.255.255.224 host 144.254.226.12 range 2055 2065 
+110,4,extended,permit,udp,host 172.17.251.12,,host 144.254.226.12,range 2055 2065,,,,,access-list 110 extended permit udp host 172.17.251.12 host 144.254.226.12 range 2055 2065 
+110,5,extended,permit,udp,host 10.59.15.227,,host 144.254.226.12,range 2055 2065,,,,,access-list 110 extended permit udp host 10.59.15.227 host 144.254.226.12 range 2055 2065 
+110,6,extended,permit,udp,host 10.56.72.35,,host 144.254.226.12,range 2055 2065,,,,,access-list 110 extended permit udp host 10.56.72.35 host 144.254.226.12 range 2055 2065 
+110,7,extended,permit,udp,10.61.32.0 255.255.255.224,,host 144.254.73.99,range 2055 2065,,,,,access-list 110 extended permit udp 10.61.32.0 255.255.255.224 host 144.254.73.99 range 2055 2065 
+110,8,extended,permit,udp,host 172.17.251.12,,host 144.254.73.99,range 2055 2065,,,,,access-list 110 extended permit udp host 172.17.251.12 host 144.254.73.99 range 2055 2065 
+110,9,extended,permit,udp,host 10.59.15.227,,host 144.254.73.99,range 2055 2065,,,,,access-list 110 extended permit udp host 10.59.15.227 host 144.254.73.99 range 2055 2065 
+110,10,extended,permit,udp,host 10.56.72.35,,host 144.254.73.99,range 2055 2065,,,,,access-list 110 extended permit udp host 10.56.72.35 host 144.254.73.99 range 2055 2065 
+110,11,extended,permit,udp,193.188.125.80 255.255.255.252,,host 171.71.238.13,eq isakmp,,,,,access-list 110 extended permit udp 193.188.125.80 255.255.255.252 host 171.71.238.13 eq isakmp 
+110,12,extended,permit,udp,193.188.125.80 255.255.255.252,,host 171.71.238.13,eq 10000,,,,,access-list 110 extended permit udp 193.188.125.80 255.255.255.252 host 171.71.238.13 eq 10000 
+110,13,extended,permit,udp,any,,host 64.104.32.84,eq isakmp ,,,,,access-list 110 extended permit udp any host 64.104.32.84 eq isakmp 
+110,14,extended,permit,esp,any,,host 64.104.32.84,,,,,,access-list 110 extended permit esp any host 64.104.32.84 
+110,15,extended,permit,udp,any,,host 64.104.32.84,eq 4500 ,,,,,access-list 110 extended permit udp any host 64.104.32.84 eq 4500 
+110,16,extended,permit,udp,any,,host 64.104.32.84,eq 10000 ,,,,,access-list 110 extended permit udp any host 64.104.32.84 eq 10000 
+110,17,extended,permit,tcp,any,,host 64.104.32.84,eq 10000 ,,,,,access-list 110 extended permit tcp any host 64.104.32.84 eq 10000 
+110,18,extended,permit,udp,any,,host 64.104.32.84,eq 443 ,,,,,access-list 110 extended permit udp any host 64.104.32.84 eq 443 
+110,19,extended,permit,tcp,any,,host 64.104.32.84,eq https ,,,,,access-list 110 extended permit tcp any host 64.104.32.84 eq https 
+110,20,extended,permit,udp,any,,host 173.37.184.121,eq isakmp ,,,,,access-list 110 extended permit udp any host 173.37.184.121 eq isakmp 
+110,21,extended,permit,udp,any,,host 173.37.184.121,eq 4500 ,,,,,access-list 110 extended permit udp any host 173.37.184.121 eq 4500 
+110,22,extended,permit,esp,any,,host 173.37.184.121,,,,,,access-list 110 extended permit esp any host 173.37.184.121 
+110,23,extended,permit,esp,host 82.178.19.74,,host 216.128.60.197,,,,,,access-list 110 extended permit esp host 82.178.19.74 host 216.128.60.197 
+110,24,extended,permit,udp,host 82.178.19.74,,host 216.128.60.197,eq isakmp,,,,,access-list 110 extended permit udp host 82.178.19.74 host 216.128.60.197 eq isakmp 
+110,25,extended,permit,gre,any,,173.36.138.128 255.255.255.128,,,,,,access-list 110 extended permit gre any 173.36.138.128 255.255.255.128 
+110,26,extended,permit,esp,any,,173.36.138.128 255.255.255.128,,,,,,access-list 110 extended permit esp any 173.36.138.128 255.255.255.128 
+110,27,extended,permit,udp,host 173.36.203.18,,any,range 9000 9001,,,,,access-list 110 extended permit udp host 173.36.203.18 any range 9000 9001 
+110,28,extended,permit,udp,host 173.36.203.225,,any,range 9000 9001,,,,,access-list 110 extended permit udp host 173.36.203.225 any range 9000 9001 
+110,29,extended,permit,gre,host 64.103.36.241,,host 10.62.84.1,,,,,,access-list 110 extended permit gre host 64.103.36.241 host 10.62.84.1 
+110,30,extended,permit,udp,host 144.254.51.84,,host 10.50.177.18,range 902 903,,,,,access-list 110 extended permit udp host 144.254.51.84 host 10.50.177.18 range 902 903 
+110,31,extended,permit,gre,host 64.103.36.241,,host 10.49.68.1,,,,,,access-list 110 extended permit gre host 64.103.36.241 host 10.49.68.1 
+110,32,extended,permit,gre,host 64.103.36.241,,host 10.49.68.18,,,,,,access-list 110 extended permit gre host 64.103.36.241 host 10.49.68.18 
+110,33,extended,permit,gre,host 64.103.36.241,,host 10.49.68.20,,,,,,access-list 110 extended permit gre host 64.103.36.241 host 10.49.68.20 
+110,34,extended,permit,gre,host 64.103.36.241,,host 10.49.68.17,,,,,,access-list 110 extended permit gre host 64.103.36.241 host 10.49.68.17 
+110,35,extended,permit,gre,host 64.104.127.65,,host 10.72.32.65,,,,,,access-list 110 extended permit gre host 64.104.127.65 host 10.72.32.65 
+110,36,extended,permit,gre,host 64.103.36.241,,host 144.254.133.81,,,,,,access-list 110 extended permit gre host 64.103.36.241 host 144.254.133.81 
+110,37,extended,permit,gre,host 64.103.36.241,,host 10.49.68.8,,,,,,access-list 110 extended permit gre host 64.103.36.241 host 10.49.68.8 
+110,38,extended,permit,tcp,199.19.191.64 255.255.255.192,range sip 5061,any,  ,,,,,access-list 110 extended permit tcp 199.19.191.64 255.255.255.192 range sip 5061 any 
+110,39,extended,permit,tcp,199.19.191.64 255.255.255.192,eq h323,any,  ,,,,,access-list 110 extended permit tcp 199.19.191.64 255.255.255.192 eq h323 any 
+110,40,extended,permit,udp,199.19.191.64 255.255.255.192,eq 1719,any,  ,,,,,access-list 110 extended permit udp 199.19.191.64 255.255.255.192 eq 1719 any 
+110,41,extended,permit,udp,199.19.191.64 255.255.255.192,range 16384 32767,any,  ,,,,,access-list 110 extended permit udp 199.19.191.64 255.255.255.192 range 16384 32767 any 
+110,42,extended,permit,tcp,host 128.107.82.105,,host 10.35.209.92,eq 2776,,,,,access-list 110 extended permit tcp host 128.107.82.105 host 10.35.209.92 eq 2776 
+110,43,extended,permit,tcp,host 128.107.82.105,,host 10.35.209.92,eq 7006,,,,,access-list 110 extended permit tcp host 128.107.82.105 host 10.35.209.92 eq 7006 
+110,44,extended,permit,udp,host 128.107.82.105,,host 10.35.209.92,eq 2776,,,,,access-list 110 extended permit udp host 128.107.82.105 host 10.35.209.92 eq 2776 
+110,45,extended,permit,udp,host 128.107.82.105,,host 10.35.209.92,eq 2777,,,,,access-list 110 extended permit udp host 128.107.82.105 host 10.35.209.92 eq 2777 
+110,46,extended,permit,udp,host 128.107.82.105,,host 10.35.209.92,eq 6006,,,,,access-list 110 extended permit udp host 128.107.82.105 host 10.35.209.92 eq 6006 
+110,47,extended,permit,tcp,host 128.107.82.106,,host 10.35.209.92,eq 2776,,,,,access-list 110 extended permit tcp host 128.107.82.106 host 10.35.209.92 eq 2776 
+110,48,extended,permit,tcp,host 128.107.82.106,,host 10.35.209.92,eq 7006,,,,,access-list 110 extended permit tcp host 128.107.82.106 host 10.35.209.92 eq 7006 
+110,49,extended,permit,udp,host 128.107.82.106,,host 10.35.209.92,eq 2776,,,,,access-list 110 extended permit udp host 128.107.82.106 host 10.35.209.92 eq 2776 
+110,50,extended,permit,udp,host 128.107.82.106,,host 10.35.209.92,eq 2777,,,,,access-list 110 extended permit udp host 128.107.82.106 host 10.35.209.92 eq 2777 
+110,51,extended,permit,udp,host 128.107.82.106,,host 10.35.209.92,eq 6006,,,,,access-list 110 extended permit udp host 128.107.82.106 host 10.35.209.92 eq 6006 
+110,52,extended,permit,udp,any,,host 171.70.192.73,eq 443 ,,,,,access-list 110 extended permit udp any host 171.70.192.73 eq 443 
+110,53,extended,permit,udp,any,,host 171.70.192.80,eq 443 ,,,,,access-list 110 extended permit udp any host 171.70.192.80 eq 443 
+110,54,extended,permit,udp,any,,host 171.70.192.82,eq 443 ,,,,,access-list 110 extended permit udp any host 171.70.192.82 eq 443 
+110,55,extended,permit,udp,any,,host 171.70.192.83,eq 443 ,,,,,access-list 110 extended permit udp any host 171.70.192.83 eq 443 
+110,56,extended,permit,udp,any,,host 171.70.192.86,eq 443 ,,,,,access-list 110 extended permit udp any host 171.70.192.86 eq 443 
+110,57,extended,permit,udp,any,,host 171.70.192.87,eq 443 ,,,,,access-list 110 extended permit udp any host 171.70.192.87 eq 443 
+110,58,extended,permit,udp,any,,host 171.70.192.88,eq 443 ,,,,,access-list 110 extended permit udp any host 171.70.192.88 eq 443 
+110,59,extended,permit,udp,any,,host 171.70.192.89,eq 443 ,,,,,access-list 110 extended permit udp any host 171.70.192.89 eq 443 
+110,60,extended,permit,udp,any,,host 171.70.192.90,eq 443 ,,,,,access-list 110 extended permit udp any host 171.70.192.90 eq 443 
+110,61,extended,permit,tcp,any,,host 144.254.220.33,eq https ,,,,,access-list 110 extended permit tcp any host 144.254.220.33 eq https 
+110,62,extended,permit,tcp,any,,host 144.254.220.33,eq 8000 ,,,,,access-list 110 extended permit tcp any host 144.254.220.33 eq 8000 
+110,63,extended,permit,tcp,host 173.36.203.197,,host 10.194.98.137,range 25000 25999,,,,,access-list 110 extended permit tcp host 173.36.203.197 host 10.194.98.137 range 25000 25999 
+110,64,extended,permit,udp,host 173.36.203.197,,host 10.194.98.137,range 50000 52399,,,,,access-list 110 extended permit udp host 173.36.203.197 host 10.194.98.137 range 50000 52399 
+110,66,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.70.177.16,eq www,,,,*** SJC KICKSTART SERVER ***,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.70.177.16 eq www 
+110,67,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 173.37.113.172,eq www,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 173.37.113.172 eq www 
+110,68,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 144.254.72.87,eq www,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 144.254.72.87 eq www 
+110,69,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.70.177.16,eq https,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.70.177.16 eq https 
+110,70,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 173.37.113.172,eq https,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 173.37.113.172 eq https 
+110,71,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 144.254.72.87,eq https,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 144.254.72.87 eq https 
+110,72,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 173.37.181.23,eq www,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 173.37.181.23 eq www 
+110,73,extended,permit,tcp,10.28.65.128 255.255.255.128,gt 1023,host 173.37.181.23,gt 1023 ,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 gt 1023 host 173.37.181.23 gt 1023 
+110,75,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.70.150.194,eq 445,,,,*** SJC Filer with WINES build files ***,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.70.150.194 eq 445 
+110,76,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.70.150.194,eq netbios-ssn,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.70.150.194 eq netbios-ssn 
+110,77,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.70.144.245,eq 445,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.70.144.245 eq 445 
+110,78,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.70.144.245,eq netbios-ssn,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.70.144.245 eq netbios-ssn 
+110,80,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.68.46.115,eq 445,,,,*** SJC Altiris Service ***,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.68.46.115 eq 445 
+110,81,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.68.46.115,eq netbios-ssn,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.68.46.115 eq netbios-ssn 
+110,82,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.68.46.115,eq 402,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.68.46.115 eq 402 
+110,83,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.68.46.115,eq 415,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.68.46.115 eq 415 
+110,84,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.68.46.115,eq 4300,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.68.46.115 eq 4300 
+110,85,extended,permit,tcp,10.28.65.128 255.255.255.128,,host 171.68.46.115,eq 1119,,,,,access-list 110 extended permit tcp 10.28.65.128 255.255.255.128 host 171.68.46.115 eq 1119 
+110,86,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.168.39,eq bootps,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.168.39 eq bootps 
+110,87,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.168.40,eq bootps,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.168.40 eq bootps 
+110,88,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.168.159,eq bootps,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.168.159 eq bootps 
+110,89,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.168.39,eq bootpc,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.168.39 eq bootpc 
+110,90,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.168.40,eq bootpc,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.168.40 eq bootpc 
+110,91,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.168.159,eq bootpc,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.168.159 eq bootpc 
+110,93,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.168.183,eq domain,,,,*** SJC DNS service ***,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.168.183 eq domain 
+110,94,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.168.155,eq domain,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.168.155 eq domain 
+110,95,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.168.167,eq domain,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.168.167 eq domain 
+110,96,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.68.226.120,eq domain,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.68.226.120 eq domain 
+110,98,extended,permit,udp,10.28.65.128 255.255.255.128,,host 173.37.87.157,eq domain,,,,*** RCDN DNS service ***,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 173.37.87.157 eq domain 
+110,100,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.71.196.25,eq netbios-ns,,,,*** NETBIOS Name Service to SJC WINS ***,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.71.196.25 eq netbios-ns 
+110,101,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.71.196.26,eq netbios-ns,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.71.196.26 eq netbios-ns 
+110,103,extended,permit,udp,10.28.65.128 255.255.255.128,,host 10.81.254.131,eq ntp,,,,*** SJC NTP ***,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 10.81.254.131 eq ntp 
+110,104,extended,permit,udp,10.28.65.128 255.255.255.128,,host 10.81.254.202,eq ntp,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 10.81.254.202 eq ntp 
+110,106,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.150.194,eq tftp,,,,*** Windows Boot - TFTP to filer ***,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.150.194 eq tftp 
+110,107,extended,permit,udp,10.28.65.128 255.255.255.128,,host 171.70.144.245,eq tftp,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 host 171.70.144.245 eq tftp 
+110,109,extended,permit,udp,10.28.65.128 255.255.255.128,gt 1023,host 171.70.150.194,gt 1023 ,,,,*** Linux Build Ports ***,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 gt 1023 host 171.70.150.194 gt 1023 
+110,110,extended,permit,udp,10.28.65.128 255.255.255.128,gt 1023,host 171.70.144.245,gt 1023 ,,,,,access-list 110 extended permit udp 10.28.65.128 255.255.255.128 gt 1023 host 171.70.144.245 gt 1023 
+110,111,extended,permit,tcp,host 128.107.85.187,,host 128.107.201.136,eq 2776,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 128.107.201.136 eq 2776 
+110,112,extended,permit,tcp,host 128.107.85.187,,host 128.107.201.136,eq 7006,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 128.107.201.136 eq 7006 
+110,113,extended,permit,tcp,host 128.107.85.187,,host 128.107.201.136,eq 2777,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 128.107.201.136 eq 2777 
+110,114,extended,permit,tcp,host 128.107.85.187,,host 128.107.201.136,eq 6006,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 128.107.201.136 eq 6006 
+110,115,extended,permit,tcp,host 128.107.85.187,,host 10.35.202.2,eq 2776,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.202.2 eq 2776 
+110,116,extended,permit,tcp,host 128.107.85.187,,host 10.35.202.2,eq 7006,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.202.2 eq 7006 
+110,117,extended,permit,tcp,host 128.107.85.187,,host 10.35.202.2,eq 2777,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.202.2 eq 2777 
+110,118,extended,permit,tcp,host 128.107.85.187,,host 10.35.202.2,eq 6006,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.202.2 eq 6006 
+110,119,extended,permit,tcp,host 128.107.85.187,,host 10.35.209.92,eq 2776,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.209.92 eq 2776 
+110,120,extended,permit,tcp,host 128.107.85.187,,host 10.35.209.92,eq 7006,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.209.92 eq 7006 
+110,121,extended,permit,tcp,host 128.107.85.187,,host 10.35.209.92,eq 2777,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.209.92 eq 2777 
+110,122,extended,permit,tcp,host 128.107.85.187,,host 10.35.209.92,eq 6006,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.209.92 eq 6006 
+110,123,extended,permit,tcp,host 128.107.85.187,,host 10.35.150.26,eq 2776,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.150.26 eq 2776 
+110,124,extended,permit,tcp,host 128.107.85.187,,host 10.35.150.26,eq 7006,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.150.26 eq 7006 
+110,125,extended,permit,tcp,host 128.107.85.187,,host 10.35.150.26,eq 2777,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.150.26 eq 2777 
+110,126,extended,permit,tcp,host 128.107.85.187,,host 10.35.150.26,eq 6006,,,,,access-list 110 extended permit tcp host 128.107.85.187 host 10.35.150.26 eq 6006 
+110,127,extended,permit,esp,host 61.142.98.158,,host 72.163.247.99,,,,,,access-list 110 extended permit esp host 61.142.98.158 host 72.163.247.99 
+110,128,extended,permit,udp,host 61.142.98.158,,host 72.163.247.99,eq isakmp,,,,,access-list 110 extended permit udp host 61.142.98.158 host 72.163.247.99 eq isakmp 
+110,129,extended,permit,esp,host 46.10.158.34,,host 64.103.35.61,,,,,,access-list 110 extended permit esp host 46.10.158.34 host 64.103.35.61 
+110,130,extended,permit,udp,host 46.10.158.34,,host 64.103.35.61,eq isakmp,,,,,access-list 110 extended permit udp host 46.10.158.34 host 64.103.35.61 eq isakmp 
+110,131,extended,permit,esp,host 80.88.240.250,,host 64.103.35.189,,,,,,access-list 110 extended permit esp host 80.88.240.250 host 64.103.35.189 
+110,132,extended,permit,udp,host 80.88.240.250,,host 64.103.35.189,eq isakmp,,,,,access-list 110 extended permit udp host 80.88.240.250 host 64.103.35.189 eq isakmp 
+110,133,extended,permit,gre,host 64.103.36.18,,host 10.61.2.122,,,,,,access-list 110 extended permit gre host 64.103.36.18 host 10.61.2.122 
+110,134,extended,permit,esp,any,,host 144.254.220.189,,,,,,access-list 110 extended permit esp any host 144.254.220.189 
+110,135,extended,permit,udp,any,,host 144.254.220.189,eq isakmp ,,,,,access-list 110 extended permit udp any host 144.254.220.189 eq isakmp 
+110,136,extended,permit,udp,any,,host 144.254.220.189,eq 4500 ,,,,,access-list 110 extended permit udp any host 144.254.220.189 eq 4500 
+110,137,extended,permit,udp,host 64.104.94.50,,host 10.35.16.42,eq syslog,,,log,,access-list 110 extended permit udp host 64.104.94.50 host 10.35.16.42 eq syslog 
+110,138,extended,permit,udp,host 64.104.94.50,,host 10.35.16.43,eq syslog,,,log,,access-list 110 extended permit udp host 64.104.94.50 host 10.35.16.43 eq syslog 
+110,139,extended,permit,udp,host 64.104.94.50,,host 10.35.22.18,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.104.94.50 host 10.35.22.18 range snmp snmptrap 
+110,140,extended,permit,udp,host 64.104.94.50,,host 10.35.22.31,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.104.94.50 host 10.35.22.31 range snmp snmptrap 
+110,141,extended,permit,udp,host 64.104.94.50,,host 171.70.93.61,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.104.94.50 host 171.70.93.61 range snmp snmptrap 
+110,142,extended,permit,udp,host 64.104.94.50,,host 10.35.48.76,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.104.94.50 host 10.35.48.76 range snmp snmptrap 
+110,143,extended,permit,udp,host 64.104.94.50,,host 10.35.48.77,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.104.94.50 host 10.35.48.77 range snmp snmptrap 
+110,144,extended,permit,udp,host 64.104.94.50,,host 10.35.48.78,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.104.94.50 host 10.35.48.78 range snmp snmptrap 
+110,145,extended,permit,udp,host 64.104.94.50,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 64.104.94.50 host 10.35.16.41 eq 2055 
+110,146,extended,permit,udp,host 144.254.51.2,,10.54.64.0 255.255.224.0,eq 6001,,,,,access-list 110 extended permit udp host 144.254.51.2 10.54.64.0 255.255.224.0 eq 6001 
+110,147,extended,permit,udp,host 64.103.39.1,,host 10.35.16.42,eq syslog,,,log,,access-list 110 extended permit udp host 64.103.39.1 host 10.35.16.42 eq syslog 
+110,148,extended,permit,udp,host 64.103.39.1,,host 10.35.16.43,eq syslog,,,log,,access-list 110 extended permit udp host 64.103.39.1 host 10.35.16.43 eq syslog 
+110,149,extended,permit,udp,host 64.103.39.1,,host 10.35.22.18,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.103.39.1 host 10.35.22.18 range snmp snmptrap 
+110,150,extended,permit,udp,host 64.103.39.1,,host 10.35.22.31,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.103.39.1 host 10.35.22.31 range snmp snmptrap 
+110,151,extended,permit,udp,host 64.103.39.1,,host 171.70.93.61,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.103.39.1 host 171.70.93.61 range snmp snmptrap 
+110,152,extended,permit,udp,host 64.103.39.1,,host 10.35.48.76,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.103.39.1 host 10.35.48.76 range snmp snmptrap 
+110,153,extended,permit,udp,host 64.103.39.1,,host 10.35.48.77,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.103.39.1 host 10.35.48.77 range snmp snmptrap 
+110,154,extended,permit,udp,host 64.103.39.1,,host 10.35.48.78,range snmp snmptrap,,,,,access-list 110 extended permit udp host 64.103.39.1 host 10.35.48.78 range snmp snmptrap 
+110,155,extended,permit,udp,host 128.107.83.0,,host 10.35.16.42,eq syslog,,,log,,access-list 110 extended permit udp host 128.107.83.0 host 10.35.16.42 eq syslog 
+110,156,extended,permit,udp,host 128.107.83.5,,host 10.35.16.42,eq syslog,,,log,,access-list 110 extended permit udp host 128.107.83.5 host 10.35.16.42 eq syslog 
+110,157,extended,permit,udp,host 128.107.83.94,,host 10.35.16.42,eq syslog,,,log,,access-list 110 extended permit udp host 128.107.83.94 host 10.35.16.42 eq syslog 
+110,158,extended,permit,udp,host 128.107.83.52,,host 10.35.16.42,eq syslog,,,log,,access-list 110 extended permit udp host 128.107.83.52 host 10.35.16.42 eq syslog 
+110,159,extended,permit,udp,host 128.107.83.0,,host 10.35.16.43,eq syslog,,,log,,access-list 110 extended permit udp host 128.107.83.0 host 10.35.16.43 eq syslog 
+110,160,extended,permit,udp,host 128.107.83.5,,host 10.35.16.43,eq syslog,,,log,,access-list 110 extended permit udp host 128.107.83.5 host 10.35.16.43 eq syslog 
+110,161,extended,permit,udp,host 128.107.83.94,,host 10.35.16.43,eq syslog,,,log,,access-list 110 extended permit udp host 128.107.83.94 host 10.35.16.43 eq syslog 
+110,162,extended,permit,udp,host 128.107.83.52,,host 10.35.16.43,eq syslog,,,log,,access-list 110 extended permit udp host 128.107.83.52 host 10.35.16.43 eq syslog 
+110,163,extended,permit,udp,host 128.107.83.0,,host 10.35.22.18,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.0 host 10.35.22.18 range snmp snmptrap 
+110,164,extended,permit,udp,host 128.107.83.5,,host 10.35.22.18,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.5 host 10.35.22.18 range snmp snmptrap 
+110,165,extended,permit,udp,host 128.107.83.94,,host 10.35.22.18,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.94 host 10.35.22.18 range snmp snmptrap 
+110,166,extended,permit,udp,host 128.107.83.52,,host 10.35.22.18,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.52 host 10.35.22.18 range snmp snmptrap 
+110,167,extended,permit,udp,host 128.107.83.0,,host 10.35.22.31,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.0 host 10.35.22.31 range snmp snmptrap 
+110,168,extended,permit,udp,host 128.107.83.5,,host 10.35.22.31,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.5 host 10.35.22.31 range snmp snmptrap 
+110,169,extended,permit,udp,host 128.107.83.94,,host 10.35.22.31,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.94 host 10.35.22.31 range snmp snmptrap 
+110,170,extended,permit,udp,host 128.107.83.52,,host 10.35.22.31,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.52 host 10.35.22.31 range snmp snmptrap 
+110,171,extended,permit,udp,host 128.107.83.0,,host 171.70.93.61,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.0 host 171.70.93.61 range snmp snmptrap 
+110,172,extended,permit,udp,host 128.107.83.5,,host 171.70.93.61,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.5 host 171.70.93.61 range snmp snmptrap 
+110,173,extended,permit,udp,host 128.107.83.94,,host 171.70.93.61,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.94 host 171.70.93.61 range snmp snmptrap 
+110,174,extended,permit,udp,host 128.107.83.52,,host 171.70.93.61,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.52 host 171.70.93.61 range snmp snmptrap 
+110,175,extended,permit,udp,host 128.107.83.0,,host 10.35.48.76,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.0 host 10.35.48.76 range snmp snmptrap 
+110,176,extended,permit,udp,host 128.107.83.5,,host 10.35.48.76,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.5 host 10.35.48.76 range snmp snmptrap 
+110,177,extended,permit,udp,host 128.107.83.94,,host 10.35.48.76,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.94 host 10.35.48.76 range snmp snmptrap 
+110,178,extended,permit,udp,host 128.107.83.52,,host 10.35.48.76,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.52 host 10.35.48.76 range snmp snmptrap 
+110,179,extended,permit,udp,host 128.107.83.0,,host 10.35.48.77,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.0 host 10.35.48.77 range snmp snmptrap 
+110,180,extended,permit,udp,host 128.107.83.5,,host 10.35.48.77,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.5 host 10.35.48.77 range snmp snmptrap 
+110,181,extended,permit,udp,host 128.107.83.94,,host 10.35.48.77,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.94 host 10.35.48.77 range snmp snmptrap 
+110,182,extended,permit,udp,host 128.107.83.52,,host 10.35.48.77,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.52 host 10.35.48.77 range snmp snmptrap 
+110,183,extended,permit,udp,host 128.107.83.0,,host 10.35.48.78,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.0 host 10.35.48.78 range snmp snmptrap 
+110,184,extended,permit,udp,host 128.107.83.5,,host 10.35.48.78,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.5 host 10.35.48.78 range snmp snmptrap 
+110,185,extended,permit,udp,host 128.107.83.94,,host 10.35.48.78,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.94 host 10.35.48.78 range snmp snmptrap 
+110,186,extended,permit,udp,host 128.107.83.52,,host 10.35.48.78,range snmp snmptrap,,,,,access-list 110 extended permit udp host 128.107.83.52 host 10.35.48.78 range snmp snmptrap 
+110,187,extended,permit,udp,host 128.107.83.0,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 128.107.83.0 host 10.35.16.41 eq 2055 
+110,188,extended,permit,udp,host 128.107.83.5,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 128.107.83.5 host 10.35.16.41 eq 2055 
+110,189,extended,permit,udp,host 128.107.83.94,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 128.107.83.94 host 10.35.16.41 eq 2055 
+110,190,extended,permit,udp,host 128.107.83.52,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 128.107.83.52 host 10.35.16.41 eq 2055 
+110,191,extended,permit,udp,host 64.103.39.1,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 64.103.39.1 host 10.35.16.41 eq 2055 
+110,192,extended,permit,gre,host 64.103.36.18,,any,  ,,,,,access-list 110 extended permit gre host 64.103.36.18 any 
+110,193,extended,permit,esp,host 116.225.68.162,,host 72.163.247.99,,,,,,access-list 110 extended permit esp host 116.225.68.162 host 72.163.247.99 
+110,194,extended,permit,udp,host 116.225.68.162,,host 72.163.247.99,eq isakmp,,,,,access-list 110 extended permit udp host 116.225.68.162 host 72.163.247.99 eq isakmp 
+110,195,extended,permit,udp,host 116.225.68.162,,host 72.163.247.99,eq 4500,,,,,access-list 110 extended permit udp host 116.225.68.162 host 72.163.247.99 eq 4500 
+110,196,extended,permit,esp,host 220.249.125.11,,host 72.163.247.98,,,,,,access-list 110 extended permit esp host 220.249.125.11 host 72.163.247.98 
+110,197,extended,permit,udp,host 220.249.125.11,,host 72.163.247.98,eq isakmp,,,,,access-list 110 extended permit udp host 220.249.125.11 host 72.163.247.98 eq isakmp 
+110,198,extended,permit,esp,host 113.204.103.178,,host 72.163.247.98,,,,,,access-list 110 extended permit esp host 113.204.103.178 host 72.163.247.98 
+110,199,extended,permit,udp,host 113.204.103.178,,host 72.163.247.98,eq isakmp,,,,,access-list 110 extended permit udp host 113.204.103.178 host 72.163.247.98 eq isakmp 
+110,200,extended,permit,esp,host 203.107.248.198,,host 64.104.77.181,,,,,,access-list 110 extended permit esp host 203.107.248.198 host 64.104.77.181 
+110,201,extended,permit,udp,host 203.107.248.198,,host 64.104.77.181,eq isakmp,,,,,access-list 110 extended permit udp host 203.107.248.198 host 64.104.77.181 eq isakmp 
+110,202,extended,permit,udp,host 203.107.248.198,,host 64.104.77.181,eq 4500,,,,,access-list 110 extended permit udp host 203.107.248.198 host 64.104.77.181 eq 4500 
+110,203,extended,permit,udp,any,,host 171.68.106.20,eq isakmp ,,,,,access-list 110 extended permit udp any host 171.68.106.20 eq isakmp 
+110,204,extended,permit,esp,any,,host 171.68.106.20,,,,,,access-list 110 extended permit esp any host 171.68.106.20 
+110,205,extended,permit,udp,any,,host 171.68.106.20,eq 4500 ,,,,,access-list 110 extended permit udp any host 171.68.106.20 eq 4500 
+110,206,extended,permit,udp,any,,host 171.68.106.20,eq 10000 ,,,,,access-list 110 extended permit udp any host 171.68.106.20 eq 10000 
+110,207,extended,permit,tcp,any,,host 171.68.106.20,eq 10000 ,,,,,access-list 110 extended permit tcp any host 171.68.106.20 eq 10000 
+110,208,extended,permit,udp,any,,host 171.68.106.20,eq 443 ,,,,,access-list 110 extended permit udp any host 171.68.106.20 eq 443 
+110,209,extended,permit,tcp,any,,host 171.68.106.20,eq https ,,,,,access-list 110 extended permit tcp any host 171.68.106.20 eq https 
+110,210,extended,permit,udp,any,,host 171.68.106.21,eq isakmp ,,,,,access-list 110 extended permit udp any host 171.68.106.21 eq isakmp 
+110,211,extended,permit,esp,any,,host 171.68.106.21,,,,,,access-list 110 extended permit esp any host 171.68.106.21 
+110,212,extended,permit,udp,any,,host 171.68.106.21,eq 4500 ,,,,,access-list 110 extended permit udp any host 171.68.106.21 eq 4500 
+110,213,extended,permit,udp,any,,host 171.68.106.21,eq 10000 ,,,,,access-list 110 extended permit udp any host 171.68.106.21 eq 10000 
+110,214,extended,permit,tcp,any,,host 171.68.106.21,eq 10000 ,,,,,access-list 110 extended permit tcp any host 171.68.106.21 eq 10000 
+110,215,extended,permit,udp,any,,host 171.68.106.21,eq 443 ,,,,,access-list 110 extended permit udp any host 171.68.106.21 eq 443 
+110,216,extended,permit,tcp,any,,host 171.68.106.21,eq https ,,,,,access-list 110 extended permit tcp any host 171.68.106.21 eq https 
+110,217,extended,permit,udp,any,,host 171.68.106.12,eq isakmp ,,,,,access-list 110 extended permit udp any host 171.68.106.12 eq isakmp 
+110,218,extended,permit,esp,any,,host 171.68.106.12,,,,,,access-list 110 extended permit esp any host 171.68.106.12 
+110,219,extended,permit,udp,any,,host 171.68.106.12,eq 4500 ,,,,,access-list 110 extended permit udp any host 171.68.106.12 eq 4500 
+110,220,extended,permit,udp,any,,host 171.68.106.12,eq 10000 ,,,,,access-list 110 extended permit udp any host 171.68.106.12 eq 10000 
+110,221,extended,permit,tcp,any,,host 171.68.106.12,eq 10000 ,,,,,access-list 110 extended permit tcp any host 171.68.106.12 eq 10000 
+110,222,extended,permit,udp,any,,host 171.68.106.12,eq 443 ,,,,,access-list 110 extended permit udp any host 171.68.106.12 eq 443 
+110,223,extended,permit,tcp,any,,host 171.68.106.12,eq https ,,,,,access-list 110 extended permit tcp any host 171.68.106.12 eq https 
+110,224,extended,permit,esp,host 72.163.249.17,,host 10.224.223.2,,,,,,access-list 110 extended permit esp host 72.163.249.17 host 10.224.223.2 
+110,225,extended,permit,udp,host 72.163.249.17,,host 10.224.223.2,eq isakmp,,,,,access-list 110 extended permit udp host 72.163.249.17 host 10.224.223.2 eq isakmp 
+110,226,extended,permit,esp,host 72.163.249.17,,host 10.224.97.198,,,,,,access-list 110 extended permit esp host 72.163.249.17 host 10.224.97.198 
+110,227,extended,permit,udp,host 72.163.249.17,,host 10.224.97.198,eq isakmp,,,,,access-list 110 extended permit udp host 72.163.249.17 host 10.224.97.198 eq isakmp 
+110,228,extended,permit,esp,host 72.163.249.17,,host 10.224.32.54,,,,,,access-list 110 extended permit esp host 72.163.249.17 host 10.224.32.54 
+110,229,extended,permit,udp,host 72.163.249.17,,host 10.224.32.54,eq isakmp,,,,,access-list 110 extended permit udp host 72.163.249.17 host 10.224.32.54 eq isakmp 
+110,230,extended,permit,esp,host 80.254.144.195,,144.254.48.0 255.255.255.0,,,,,,access-list 110 extended permit esp host 80.254.144.195 144.254.48.0 255.255.255.0 
+110,231,extended,permit,udp,host 80.254.144.195,,144.254.48.0 255.255.255.0,eq isakmp,,,,,access-list 110 extended permit udp host 80.254.144.195 144.254.48.0 255.255.255.0 eq isakmp 
+110,232,extended,permit,esp,host 80.254.144.195,,144.254.49.0 255.255.255.0,,,,,,access-list 110 extended permit esp host 80.254.144.195 144.254.49.0 255.255.255.0 
+110,233,extended,permit,udp,host 80.254.144.195,,144.254.49.0 255.255.255.0,eq isakmp,,,,,access-list 110 extended permit udp host 80.254.144.195 144.254.49.0 255.255.255.0 eq isakmp 
+110,234,extended,permit,esp,host 89.107.179.21,,host 144.254.146.9,,,,,,access-list 110 extended permit esp host 89.107.179.21 host 144.254.146.9 
+110,235,extended,permit,udp,host 89.107.179.21,,host 144.254.146.9,eq isakmp,,,,,access-list 110 extended permit udp host 89.107.179.21 host 144.254.146.9 eq isakmp 
+110,236,extended,permit,tcp,any,,host 64.100.32.216,eq www ,,,,,access-list 110 extended permit tcp any host 64.100.32.216 eq www 
+110,237,extended,permit,tcp,any,,host 64.100.32.216,eq https ,,,,,access-list 110 extended permit tcp any host 64.100.32.216 eq https 
+110,238,extended,permit,tcp,any,,host 144.254.73.146,eq www ,,,,,access-list 110 extended permit tcp any host 144.254.73.146 eq www 
+110,239,extended,permit,tcp,any,,host 144.254.73.146,eq https ,,,,,access-list 110 extended permit tcp any host 144.254.73.146 eq https 
+110,240,extended,permit,tcp,any,,host 171.68.46.188,eq www ,,,,,access-list 110 extended permit tcp any host 171.68.46.188 eq www 
+110,241,extended,permit,tcp,any,,host 171.68.46.188,eq https ,,,,,access-list 110 extended permit tcp any host 171.68.46.188 eq https 
+110,242,extended,permit,esp,host 122.28.177.182,,host 64.104.20.28,,,,,,access-list 110 extended permit esp host 122.28.177.182 host 64.104.20.28 
+110,243,extended,permit,udp,host 122.28.177.182,,host 64.104.20.28,eq isakmp,,,,,access-list 110 extended permit udp host 122.28.177.182 host 64.104.20.28 eq isakmp 
+110,244,extended,permit,udp,host 122.28.177.182,,host 64.104.20.28,eq 4500,,,,,access-list 110 extended permit udp host 122.28.177.182 host 64.104.20.28 eq 4500 
+110,245,extended,permit,esp,host 203.174.191.122,,host 64.104.213.240,,,,,,access-list 110 extended permit esp host 203.174.191.122 host 64.104.213.240 
+110,246,extended,permit,udp,host 203.174.191.122,,host 64.104.213.240,eq isakmp,,,,,access-list 110 extended permit udp host 203.174.191.122 host 64.104.213.240 eq isakmp 
+110,247,extended,permit,tcp,host 128.107.233.36,,host 10.89.29.11,eq 2000,,,,,access-list 110 extended permit tcp host 128.107.233.36 host 10.89.29.11 eq 2000 
+110,248,extended,permit,udp,host 128.107.233.36,,host 10.89.29.11,eq tftp,,,,,access-list 110 extended permit udp host 128.107.233.36 host 10.89.29.11 eq tftp 
+110,249,extended,permit,udp,host 128.107.233.36,,host 10.89.29.11,range 20480 32767,,,,,access-list 110 extended permit udp host 128.107.233.36 host 10.89.29.11 range 20480 32767 
+110,250,extended,permit,udp,any,,host 72.163.248.180,range 5246 5247,,,,,access-list 110 extended permit udp any host 72.163.248.180 range 5246 5247 
+110,251,extended,permit,udp,any,,host 72.163.248.181,range 5246 5247,,,,,access-list 110 extended permit udp any host 72.163.248.181 range 5246 5247 
+110,252,extended,permit,gre,host 64.103.36.241,,host 10.49.68.19,,,,,,access-list 110 extended permit gre host 64.103.36.241 host 10.49.68.19 
+110,253,extended,permit,tcp,host 128.107.85.132,,host 10.32.134.101,range ftp-data ssh,,,,,access-list 110 extended permit tcp host 128.107.85.132 host 10.32.134.101 range ftp-data ssh 
+110,254,extended,permit,tcp,host 128.107.85.132,,host 10.32.134.80,range ftp-data ssh,,,,,access-list 110 extended permit tcp host 128.107.85.132 host 10.32.134.80 range ftp-data ssh 
+110,255,extended,permit,tcp,host 128.107.85.133,,host 10.32.134.101,range ftp-data ssh,,,,,access-list 110 extended permit tcp host 128.107.85.133 host 10.32.134.101 range ftp-data ssh 
+110,256,extended,permit,tcp,host 128.107.85.133,,host 10.32.134.80,range ftp-data ssh,,,,,access-list 110 extended permit tcp host 128.107.85.133 host 10.32.134.80 range ftp-data ssh 
+110,257,extended,permit,tcp,host 128.107.235.138,,host 10.35.173.211,eq ftp-data,,,,,access-list 110 extended permit tcp host 128.107.235.138 host 10.35.173.211 eq ftp-data 
+110,258,extended,permit,tcp,host 128.107.235.138,,host 10.35.173.212,eq ftp-data,,,,,access-list 110 extended permit tcp host 128.107.235.138 host 10.35.173.212 eq ftp-data 
+110,259,extended,permit,tcp,host 128.107.235.138,,host 10.35.176.159,eq ftp-data,,,,,access-list 110 extended permit tcp host 128.107.235.138 host 10.35.176.159 eq ftp-data 
+110,260,extended,permit,tcp,host 128.107.85.170,,host 10.35.48.151,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.170 host 10.35.48.151 eq 8060 
+110,261,extended,permit,tcp,host 128.107.85.170,,host 10.35.48.152,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.170 host 10.35.48.152 eq 8060 
+110,262,extended,permit,tcp,host 128.107.85.170,,host 10.35.48.153,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.170 host 10.35.48.153 eq 8060 
+110,263,extended,permit,tcp,host 128.107.85.170,,host 10.35.48.154,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.170 host 10.35.48.154 eq 8060 
+110,264,extended,permit,tcp,host 128.107.85.170,,host 10.35.48.155,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.170 host 10.35.48.155 eq 8060 
+110,265,extended,permit,tcp,host 128.107.85.170,,host 10.35.48.156,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.170 host 10.35.48.156 eq 8060 
+110,266,extended,permit,tcp,host 128.107.85.170,,host 10.35.48.117,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.170 host 10.35.48.117 eq 8060 
+110,267,extended,permit,tcp,host 128.107.85.170,,host 10.35.48.118,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.170 host 10.35.48.118 eq 8060 
+110,268,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.151,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.151 eq 8060 
+110,269,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.152,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.152 eq 8060 
+110,270,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.153,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.153 eq 8060 
+110,271,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.154,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.154 eq 8060 
+110,272,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.155,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.155 eq 8060 
+110,273,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.156,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.156 eq 8060 
+110,274,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.117,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.117 eq 8060 
+110,275,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.118,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.118 eq 8060 
+110,276,extended,permit,tcp,host 128.107.240.56,,host 171.68.196.222,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.196.222 eq sip 
+110,277,extended,permit,tcp,host 128.107.240.56,,host 171.70.112.213,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.70.112.213 eq sip 
+110,278,extended,permit,tcp,host 128.107.240.56,,host 171.68.196.223,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.196.223 eq sip 
+110,279,extended,permit,tcp,host 128.107.240.56,,host 171.70.112.214,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.70.112.214 eq sip 
+110,280,extended,permit,tcp,host 128.107.240.56,,host 171.68.196.224,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.196.224 eq sip 
+110,281,extended,permit,tcp,host 128.107.240.56,,host 171.70.112.215,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.70.112.215 eq sip 
+110,282,extended,permit,tcp,host 128.107.240.56,,host 171.68.196.225,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.196.225 eq sip 
+110,283,extended,permit,tcp,host 128.107.240.56,,host 171.70.112.216,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.70.112.216 eq sip 
+110,284,extended,permit,tcp,host 128.107.240.56,,host 171.68.196.226,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.196.226 eq sip 
+110,285,extended,permit,tcp,host 128.107.240.56,,host 171.70.112.217,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.70.112.217 eq sip 
+110,286,extended,permit,tcp,host 128.107.240.56,,host 171.68.196.227,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.196.227 eq sip 
+110,287,extended,permit,tcp,host 128.107.240.56,,host 171.70.112.218,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.70.112.218 eq sip 
+110,288,extended,permit,tcp,host 128.107.240.56,,host 171.68.196.228,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.196.228 eq sip 
+110,289,extended,permit,tcp,host 128.107.240.56,,host 171.70.112.219,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.70.112.219 eq sip 
+110,290,extended,permit,tcp,host 128.107.240.56,,host 171.68.196.229,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.196.229 eq sip 
+110,291,extended,permit,tcp,host 128.107.240.56,,host 171.70.112.204,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.70.112.204 eq sip 
+110,292,extended,permit,tcp,host 128.107.240.56,,host 171.68.196.204,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.196.204 eq sip 
+110,293,extended,permit,tcp,host 128.107.240.56,,host 171.70.112.205,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.70.112.205 eq sip 
+110,294,extended,permit,tcp,host 128.107.240.56,,host 171.68.196.205,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.196.205 eq sip 
+110,295,extended,permit,tcp,host 128.107.240.56,,host 171.68.38.28,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.38.28 eq sip 
+110,296,extended,permit,tcp,host 128.107.240.56,,host 171.68.38.29,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 171.68.38.29 eq sip 
+110,297,extended,permit,tcp,host 128.107.240.56,,host 72.163.36.151,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 72.163.36.151 eq sip 
+110,298,extended,permit,tcp,host 128.107.240.56,,host 72.163.36.152,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.56 host 72.163.36.152 eq sip 
+110,299,extended,permit,tcp,host 128.107.240.57,,host 171.70.112.212,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.70.112.212 eq sip 
+110,300,extended,permit,tcp,host 128.107.240.57,,host 171.68.196.222,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.196.222 eq sip 
+110,301,extended,permit,tcp,host 128.107.240.57,,host 171.70.112.213,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.70.112.213 eq sip 
+110,302,extended,permit,tcp,host 128.107.240.57,,host 171.68.196.223,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.196.223 eq sip 
+110,303,extended,permit,tcp,host 128.107.240.57,,host 171.70.112.214,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.70.112.214 eq sip 
+110,304,extended,permit,tcp,host 128.107.240.57,,host 171.68.196.224,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.196.224 eq sip 
+110,305,extended,permit,tcp,host 128.107.240.57,,host 171.70.112.215,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.70.112.215 eq sip 
+110,306,extended,permit,tcp,host 128.107.240.57,,host 171.68.196.225,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.196.225 eq sip 
+110,307,extended,permit,tcp,host 128.107.240.57,,host 171.70.112.216,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.70.112.216 eq sip 
+110,308,extended,permit,tcp,host 128.107.240.57,,host 171.68.196.226,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.196.226 eq sip 
+110,309,extended,permit,tcp,host 128.107.240.57,,host 171.70.112.217,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.70.112.217 eq sip 
+110,310,extended,permit,tcp,host 128.107.240.57,,host 171.68.196.227,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.196.227 eq sip 
+110,311,extended,permit,tcp,host 128.107.240.57,,host 171.70.112.218,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.70.112.218 eq sip 
+110,312,extended,permit,tcp,host 128.107.240.57,,host 171.68.196.228,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.196.228 eq sip 
+110,313,extended,permit,tcp,host 128.107.240.57,,host 171.70.112.219,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.70.112.219 eq sip 
+110,314,extended,permit,tcp,host 128.107.240.57,,host 171.68.196.229,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.196.229 eq sip 
+110,315,extended,permit,tcp,host 128.107.240.57,,host 171.70.112.204,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.70.112.204 eq sip 
+110,316,extended,permit,tcp,host 128.107.240.57,,host 171.68.196.204,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.196.204 eq sip 
+110,317,extended,permit,tcp,host 128.107.240.57,,host 171.70.112.205,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.70.112.205 eq sip 
+110,318,extended,permit,tcp,host 128.107.240.57,,host 171.68.196.205,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.196.205 eq sip 
+110,319,extended,permit,tcp,host 128.107.240.57,,host 171.68.38.28,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.38.28 eq sip 
+110,320,extended,permit,tcp,host 128.107.240.57,,host 171.68.38.29,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 171.68.38.29 eq sip 
+110,321,extended,permit,tcp,host 128.107.240.57,,host 72.163.36.151,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 72.163.36.151 eq sip 
+110,322,extended,permit,tcp,host 128.107.240.57,,host 72.163.36.152,eq sip,,,,,access-list 110 extended permit tcp host 128.107.240.57 host 72.163.36.152 eq sip 
+110,323,extended,permit,tcp,host 10.81.52.38,,172.18.240.0 255.255.255.0,eq ssh,,,,,access-list 110 extended permit tcp host 10.81.52.38 172.18.240.0 255.255.255.0 eq ssh 
+110,324,extended,permit,tcp,host 128.107.250.242,,172.27.204.0 255.255.255.0,eq 5443,,,,,access-list 110 extended permit tcp host 128.107.250.242 172.27.204.0 255.255.255.0 eq 5443 
+110,325,extended,permit,tcp,host 128.107.250.242,,172.27.204.0 255.255.255.0,eq 9080,,,,,access-list 110 extended permit tcp host 128.107.250.242 172.27.204.0 255.255.255.0 eq 9080 
+110,326,extended,permit,tcp,host 128.107.250.242,,172.27.204.0 255.255.255.0,eq 2195,,,,,access-list 110 extended permit tcp host 128.107.250.242 172.27.204.0 255.255.255.0 eq 2195 
+110,327,extended,permit,tcp,host 128.107.83.73,,host 10.35.1.19,eq 5005,,,,,access-list 110 extended permit tcp host 128.107.83.73 host 10.35.1.19 eq 5005 
+110,328,extended,permit,tcp,host 128.107.83.74,,host 10.35.1.19,eq 5005,,,,,access-list 110 extended permit tcp host 128.107.83.74 host 10.35.1.19 eq 5005 
+110,329,extended,permit,esp,any,,host 64.102.223.9,,,,,,access-list 110 extended permit esp any host 64.102.223.9 
+110,330,extended,permit,udp,any,,host 64.102.223.9,eq isakmp ,,,,,access-list 110 extended permit udp any host 64.102.223.9 eq isakmp 
+110,331,extended,permit,udp,any,,host 64.102.223.9,eq 4500 ,,,,,access-list 110 extended permit udp any host 64.102.223.9 eq 4500 
+110,332,extended,permit,udp,any,,host 64.102.223.9,eq 10000 ,,,,,access-list 110 extended permit udp any host 64.102.223.9 eq 10000 
+110,333,extended,permit,tcp,any,,host 64.102.223.9,eq 10000 ,,,,,access-list 110 extended permit tcp any host 64.102.223.9 eq 10000 
+110,334,extended,permit,esp,any,,host 64.102.223.10,,,,,,access-list 110 extended permit esp any host 64.102.223.10 
+110,335,extended,permit,udp,any,,host 64.102.223.10,eq isakmp ,,,,,access-list 110 extended permit udp any host 64.102.223.10 eq isakmp 
+110,336,extended,permit,udp,any,,host 64.102.223.10,eq 4500 ,,,,,access-list 110 extended permit udp any host 64.102.223.10 eq 4500 
+110,337,extended,permit,udp,any,,host 64.102.223.10,eq 10000 ,,,,,access-list 110 extended permit udp any host 64.102.223.10 eq 10000 
+110,338,extended,permit,tcp,any,,host 64.102.223.10,eq 10000 ,,,,,access-list 110 extended permit tcp any host 64.102.223.10 eq 10000 
+110,339,extended,permit,esp,any,,host 64.102.223.12,,,,,,access-list 110 extended permit esp any host 64.102.223.12 
+110,340,extended,permit,udp,any,,host 64.102.223.12,eq isakmp ,,,,,access-list 110 extended permit udp any host 64.102.223.12 eq isakmp 
+110,341,extended,permit,udp,any,,host 64.102.223.12,eq 4500 ,,,,,access-list 110 extended permit udp any host 64.102.223.12 eq 4500 
+110,342,extended,permit,udp,any,,host 64.102.223.12,eq 10000 ,,,,,access-list 110 extended permit udp any host 64.102.223.12 eq 10000 
+110,343,extended,permit,tcp,any,,host 64.102.223.12,eq 10000 ,,,,,access-list 110 extended permit tcp any host 64.102.223.12 eq 10000 
+110,344,extended,permit,udp,any,,host 171.68.106.1,eq isakmp ,,,,,access-list 110 extended permit udp any host 171.68.106.1 eq isakmp 
+110,345,extended,permit,esp,any,,host 171.68.106.1,,,,,,access-list 110 extended permit esp any host 171.68.106.1 
+110,346,extended,permit,udp,any,,host 171.68.106.1,eq 4500 ,,,,,access-list 110 extended permit udp any host 171.68.106.1 eq 4500 
+110,347,extended,permit,udp,any,,host 171.68.106.1,eq 10000 ,,,,,access-list 110 extended permit udp any host 171.68.106.1 eq 10000 
+110,348,extended,permit,tcp,any,,host 171.68.106.1,eq 10000 ,,,,,access-list 110 extended permit tcp any host 171.68.106.1 eq 10000 
+110,349,extended,permit,udp,any,,host 171.68.106.2,eq isakmp ,,,,,access-list 110 extended permit udp any host 171.68.106.2 eq isakmp 
+110,350,extended,permit,esp,any,,host 171.68.106.2,,,,,,access-list 110 extended permit esp any host 171.68.106.2 
+110,351,extended,permit,udp,any,,host 171.68.106.2,eq 4500 ,,,,,access-list 110 extended permit udp any host 171.68.106.2 eq 4500 
+110,352,extended,permit,udp,any,,host 171.68.106.2,eq 10000 ,,,,,access-list 110 extended permit udp any host 171.68.106.2 eq 10000 
+110,353,extended,permit,tcp,any,,host 171.68.106.2,eq 10000 ,,,,,access-list 110 extended permit tcp any host 171.68.106.2 eq 10000 
+110,354,extended,permit,udp,any,,host 171.68.106.4,eq isakmp ,,,,,access-list 110 extended permit udp any host 171.68.106.4 eq isakmp 
+110,355,extended,permit,esp,any,,host 171.68.106.4,,,,,,access-list 110 extended permit esp any host 171.68.106.4 
+110,356,extended,permit,udp,any,,host 171.68.106.4,eq 4500 ,,,,,access-list 110 extended permit udp any host 171.68.106.4 eq 4500 
+110,357,extended,permit,udp,any,,host 171.68.106.4,eq 10000 ,,,,,access-list 110 extended permit udp any host 171.68.106.4 eq 10000 
+110,358,extended,permit,tcp,any,,host 171.68.106.4,eq 10000 ,,,,,access-list 110 extended permit tcp any host 171.68.106.4 eq 10000 
+110,359,extended,permit,tcp,host 128.107.225.135,,host 72.163.57.6,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.225.135 host 72.163.57.6 eq ldap 
+110,360,extended,permit,tcp,host 128.107.225.135,,host 72.163.57.6,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.225.135 host 72.163.57.6 eq ldaps 
+110,361,extended,permit,tcp,host 128.107.225.153,,host 72.163.57.6,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.225.153 host 72.163.57.6 eq ldap 
+110,362,extended,permit,tcp,host 128.107.225.153,,host 72.163.57.6,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.225.153 host 72.163.57.6 eq ldaps 
+110,363,extended,permit,tcp,host 128.107.225.152,,host 72.163.57.6,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.225.152 host 72.163.57.6 eq ldap 
+110,364,extended,permit,tcp,host 128.107.225.152,,host 72.163.57.6,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.225.152 host 72.163.57.6 eq ldaps 
+110,365,extended,permit,tcp,host 128.107.228.165,,host 72.163.57.6,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.228.165 host 72.163.57.6 eq ldap 
+110,366,extended,permit,tcp,host 128.107.228.165,,host 72.163.57.6,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.228.165 host 72.163.57.6 eq ldaps 
+110,367,extended,permit,tcp,host 128.107.225.135,,host 64.102.9.230,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.225.135 host 64.102.9.230 eq ldap 
+110,368,extended,permit,tcp,host 128.107.225.135,,host 64.102.9.230,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.225.135 host 64.102.9.230 eq ldaps 
+110,369,extended,permit,tcp,host 128.107.225.153,,host 64.102.9.230,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.225.153 host 64.102.9.230 eq ldap 
+110,370,extended,permit,tcp,host 128.107.225.153,,host 64.102.9.230,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.225.153 host 64.102.9.230 eq ldaps 
+110,371,extended,permit,tcp,host 128.107.225.152,,host 64.102.9.230,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.225.152 host 64.102.9.230 eq ldap 
+110,372,extended,permit,tcp,host 128.107.225.152,,host 64.102.9.230,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.225.152 host 64.102.9.230 eq ldaps 
+110,373,extended,permit,tcp,host 128.107.228.165,,host 64.102.9.230,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.228.165 host 64.102.9.230 eq ldap 
+110,374,extended,permit,tcp,host 128.107.228.165,,host 64.102.9.230,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.228.165 host 64.102.9.230 eq ldaps 
+110,375,extended,permit,esp,host 203.174.191.118,,host 64.104.213.240,,,,,,access-list 110 extended permit esp host 203.174.191.118 host 64.104.213.240 
+110,376,extended,permit,udp,host 203.174.191.118,,host 64.104.213.240,eq isakmp,,,,,access-list 110 extended permit udp host 203.174.191.118 host 64.104.213.240 eq isakmp 
+110,377,extended,permit,tcp,128.107.237.40 255.255.255.248,,171.68.11.64 255.255.255.192,eq 6021,,,,,access-list 110 extended permit tcp 128.107.237.40 255.255.255.248 171.68.11.64 255.255.255.192 eq 6021 
+110,378,extended,permit,tcp,128.107.237.40 255.255.255.248,,72.163.41.64 255.255.255.224,eq 6021,,,,,access-list 110 extended permit tcp 128.107.237.40 255.255.255.248 72.163.41.64 255.255.255.224 eq 6021 
+110,379,extended,permit,udp,host 128.107.87.52,,171.71.216.0 255.255.248.0,eq 3478,,,,,access-list 110 extended permit udp host 128.107.87.52 171.71.216.0 255.255.248.0 eq 3478 
+110,380,extended,permit,udp,host 128.107.87.52,,171.71.224.0 255.255.248.0,eq 3478,,,,,access-list 110 extended permit udp host 128.107.87.52 171.71.224.0 255.255.248.0 eq 3478 
+110,381,extended,permit,udp,host 128.107.87.52,,171.71.232.0 255.255.255.0,eq 3478,,,,,access-list 110 extended permit udp host 128.107.87.52 171.71.232.0 255.255.255.0 eq 3478 
+110,382,extended,permit,tcp,host 128.107.87.52,,171.71.216.0 255.255.248.0,eq 3478,,,,,access-list 110 extended permit tcp host 128.107.87.52 171.71.216.0 255.255.248.0 eq 3478 
+110,383,extended,permit,tcp,host 128.107.87.52,,171.71.224.0 255.255.248.0,eq 3478,,,,,access-list 110 extended permit tcp host 128.107.87.52 171.71.224.0 255.255.248.0 eq 3478 
+110,384,extended,permit,tcp,host 128.107.87.52,,171.71.232.0 255.255.255.0,eq 3478,,,,,access-list 110 extended permit tcp host 128.107.87.52 171.71.232.0 255.255.255.0 eq 3478 
+110,385,extended,permit,udp,host 128.107.87.53,,171.71.216.0 255.255.248.0,eq 3478,,,,,access-list 110 extended permit udp host 128.107.87.53 171.71.216.0 255.255.248.0 eq 3478 
+110,386,extended,permit,udp,host 128.107.87.53,,171.71.224.0 255.255.248.0,eq 3478,,,,,access-list 110 extended permit udp host 128.107.87.53 171.71.224.0 255.255.248.0 eq 3478 
+110,387,extended,permit,udp,host 128.107.87.53,,171.71.232.0 255.255.255.0,eq 3478,,,,,access-list 110 extended permit udp host 128.107.87.53 171.71.232.0 255.255.255.0 eq 3478 
+110,388,extended,permit,tcp,host 128.107.87.53,,171.71.216.0 255.255.248.0,eq 3478,,,,,access-list 110 extended permit tcp host 128.107.87.53 171.71.216.0 255.255.248.0 eq 3478 
+110,389,extended,permit,tcp,host 128.107.87.53,,171.71.224.0 255.255.248.0,eq 3478,,,,,access-list 110 extended permit tcp host 128.107.87.53 171.71.224.0 255.255.248.0 eq 3478 
+110,390,extended,permit,tcp,host 128.107.87.53,,171.71.232.0 255.255.255.0,eq 3478,,,,,access-list 110 extended permit tcp host 128.107.87.53 171.71.232.0 255.255.255.0 eq 3478 
+110,391,extended,permit,udp,host 128.107.87.52,,128.107.138.240 255.255.255.240,eq 3478,,,,,access-list 110 extended permit udp host 128.107.87.52 128.107.138.240 255.255.255.240 eq 3478 
+110,392,extended,permit,udp,host 128.107.87.53,,128.107.138.240 255.255.255.240,eq 3478,,,,,access-list 110 extended permit udp host 128.107.87.53 128.107.138.240 255.255.255.240 eq 3478 
+110,393,extended,permit,tcp,host 128.107.85.175,,host 10.32.134.107,eq sip,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.32.134.107 eq sip 
+110,394,extended,permit,tcp,host 128.107.85.175,,host 10.32.134.108,eq sip,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.32.134.108 eq sip 
+110,395,extended,permit,tcp,host 128.107.85.175,,host 10.34.130.10,eq sip,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.34.130.10 eq sip 
+110,396,extended,permit,tcp,host 128.107.85.175,,host 10.32.134.107,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.32.134.107 eq 8060 
+110,397,extended,permit,tcp,host 128.107.85.175,,host 10.32.134.108,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.32.134.108 eq 8060 
+110,398,extended,permit,tcp,host 128.107.85.175,,host 10.34.130.10,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.34.130.10 eq 8060 
+110,399,extended,permit,tcp,host 128.107.85.132,,host 10.32.134.107,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.132 host 10.32.134.107 eq 5620 
+110,400,extended,permit,tcp,host 128.107.85.132,,host 10.32.134.108,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.132 host 10.32.134.108 eq 5620 
+110,401,extended,permit,tcp,host 128.107.85.132,,host 10.34.130.10,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.132 host 10.34.130.10 eq 5620 
+110,402,extended,permit,tcp,host 128.107.85.133,,host 10.32.134.107,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.133 host 10.32.134.107 eq 5620 
+110,403,extended,permit,tcp,host 128.107.85.133,,host 10.32.134.108,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.133 host 10.32.134.108 eq 5620 
+110,404,extended,permit,tcp,host 128.107.85.133,,host 10.34.130.10,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.133 host 10.34.130.10 eq 5620 
+110,405,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.106,eq sip,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.106 eq sip 
+110,406,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.107,eq sip,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.107 eq sip 
+110,407,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.108,eq sip,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.108 eq sip 
+110,408,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.109,eq sip,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.109 eq sip 
+110,409,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.106,eq 5061,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.106 eq 5061 
+110,410,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.107,eq 5061,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.107 eq 5061 
+110,411,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.108,eq 5061,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.108 eq 5061 
+110,412,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.109,eq 5061,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.109 eq 5061 
+110,413,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.106,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.106 eq 8060 
+110,414,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.107,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.107 eq 8060 
+110,415,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.108,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.108 eq 8060 
+110,416,extended,permit,tcp,host 128.107.85.175,,host 10.35.48.109,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.175 host 10.35.48.109 eq 8060 
+110,417,extended,permit,tcp,host 128.107.85.174,,host 10.35.48.106,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.174 host 10.35.48.106 eq 8060 
+110,418,extended,permit,tcp,host 128.107.85.174,,host 10.35.48.107,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.174 host 10.35.48.107 eq 8060 
+110,419,extended,permit,tcp,host 128.107.85.174,,host 10.35.48.108,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.174 host 10.35.48.108 eq 8060 
+110,420,extended,permit,tcp,host 128.107.85.174,,host 10.35.48.109,eq 8060,,,,,access-list 110 extended permit tcp host 128.107.85.174 host 10.35.48.109 eq 8060 
+110,421,extended,permit,tcp,host 128.107.85.132,,host 10.35.48.106,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.132 host 10.35.48.106 eq 5620 
+110,422,extended,permit,tcp,host 128.107.85.132,,host 10.35.48.107,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.132 host 10.35.48.107 eq 5620 
+110,423,extended,permit,tcp,host 128.107.85.132,,host 10.35.48.108,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.132 host 10.35.48.108 eq 5620 
+110,424,extended,permit,tcp,host 128.107.85.132,,host 10.35.48.109,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.132 host 10.35.48.109 eq 5620 
+110,425,extended,permit,tcp,host 128.107.85.133,,host 10.35.48.106,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.133 host 10.35.48.106 eq 5620 
+110,426,extended,permit,tcp,host 128.107.85.133,,host 10.35.48.107,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.133 host 10.35.48.107 eq 5620 
+110,427,extended,permit,tcp,host 128.107.85.133,,host 10.35.48.108,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.133 host 10.35.48.108 eq 5620 
+110,428,extended,permit,tcp,host 128.107.85.133,,host 10.35.48.109,eq 5620,,,,,access-list 110 extended permit tcp host 128.107.85.133 host 10.35.48.109 eq 5620 
+110,429,extended,permit,tcp,172.17.153.128 255.255.255.240,,host 171.68.46.60,eq 27000,,,,,access-list 110 extended permit tcp 172.17.153.128 255.255.255.240 host 171.68.46.60 eq 27000 
+110,430,extended,permit,tcp,172.17.153.144 255.255.255.240,,host 171.68.46.60,eq 27000,,,,,access-list 110 extended permit tcp 172.17.153.144 255.255.255.240 host 171.68.46.60 eq 27000 
+110,431,extended,permit,tcp,172.17.153.128 255.255.255.240,,host 171.68.46.60,eq 27010,,,,,access-list 110 extended permit tcp 172.17.153.128 255.255.255.240 host 171.68.46.60 eq 27010 
+110,432,extended,permit,tcp,172.17.153.144 255.255.255.240,,host 171.68.46.60,eq 27010,,,,,access-list 110 extended permit tcp 172.17.153.144 255.255.255.240 host 171.68.46.60 eq 27010 
+110,433,extended,permit,udp,172.17.153.128 255.255.255.240,,host 171.68.46.60,eq 902,,,,,access-list 110 extended permit udp 172.17.153.128 255.255.255.240 host 171.68.46.60 eq 902 
+110,434,extended,permit,udp,172.17.153.144 255.255.255.240,,host 171.68.46.60,eq 902,,,,,access-list 110 extended permit udp 172.17.153.144 255.255.255.240 host 171.68.46.60 eq 902 
+110,435,extended,permit,tcp,128.107.242.128 255.255.255.128,,host 64.102.9.231,eq ldap,,,,,access-list 110 extended permit tcp 128.107.242.128 255.255.255.128 host 64.102.9.231 eq ldap 
+110,436,extended,permit,tcp,128.107.242.128 255.255.255.128,,host 72.163.57.7,eq ldap,,,,,access-list 110 extended permit tcp 128.107.242.128 255.255.255.128 host 72.163.57.7 eq ldap 
+110,437,extended,permit,tcp,128.107.242.128 255.255.255.128,,host 64.102.9.231,eq ldaps,,,,,access-list 110 extended permit tcp 128.107.242.128 255.255.255.128 host 64.102.9.231 eq ldaps 
+110,438,extended,permit,tcp,128.107.242.128 255.255.255.128,,host 72.163.57.7,eq ldaps,,,,,access-list 110 extended permit tcp 128.107.242.128 255.255.255.128 host 72.163.57.7 eq ldaps 
+110,439,extended,permit,tcp,128.107.227.224 255.255.255.240,,host 64.102.9.231,eq ldap,,,,,access-list 110 extended permit tcp 128.107.227.224 255.255.255.240 host 64.102.9.231 eq ldap 
+110,440,extended,permit,tcp,128.107.227.224 255.255.255.240,,host 72.163.57.7,eq ldap,,,,,access-list 110 extended permit tcp 128.107.227.224 255.255.255.240 host 72.163.57.7 eq ldap 
+110,441,extended,permit,tcp,128.107.227.224 255.255.255.240,,host 64.102.9.231,eq ldaps,,,,,access-list 110 extended permit tcp 128.107.227.224 255.255.255.240 host 64.102.9.231 eq ldaps 
+110,442,extended,permit,tcp,128.107.227.224 255.255.255.240,,host 72.163.57.7,eq ldaps,,,,,access-list 110 extended permit tcp 128.107.227.224 255.255.255.240 host 72.163.57.7 eq ldaps 
+110,443,extended,permit,tcp,host 198.133.219.38,,host 64.102.9.231,eq ldap,,,,,access-list 110 extended permit tcp host 198.133.219.38 host 64.102.9.231 eq ldap 
+110,444,extended,permit,tcp,host 198.133.219.38,,host 72.163.57.7,eq ldap,,,,,access-list 110 extended permit tcp host 198.133.219.38 host 72.163.57.7 eq ldap 
+110,445,extended,permit,tcp,host 198.133.219.38,,host 64.102.9.231,eq ldaps,,,,,access-list 110 extended permit tcp host 198.133.219.38 host 64.102.9.231 eq ldaps 
+110,446,extended,permit,tcp,host 198.133.219.38,,host 72.163.57.7,eq ldaps,,,,,access-list 110 extended permit tcp host 198.133.219.38 host 72.163.57.7 eq ldaps 
+110,447,extended,permit,tcp,host 198.133.219.41,,host 64.102.9.231,eq ldap,,,,,access-list 110 extended permit tcp host 198.133.219.41 host 64.102.9.231 eq ldap 
+110,448,extended,permit,tcp,host 198.133.219.41,,host 72.163.57.7,eq ldap,,,,,access-list 110 extended permit tcp host 198.133.219.41 host 72.163.57.7 eq ldap 
+110,449,extended,permit,tcp,host 198.133.219.41,,host 64.102.9.231,eq ldaps,,,,,access-list 110 extended permit tcp host 198.133.219.41 host 64.102.9.231 eq ldaps 
+110,450,extended,permit,tcp,host 198.133.219.41,,host 72.163.57.7,eq ldaps,,,,,access-list 110 extended permit tcp host 198.133.219.41 host 72.163.57.7 eq ldaps 
+110,451,extended,permit,tcp,host 128.107.212.162,,host 171.68.224.207,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.212.162 host 171.68.224.207 eq ldap 
+110,452,extended,permit,tcp,host 128.107.212.162,,host 171.68.224.207,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.212.162 host 171.68.224.207 eq ldaps 
+110,453,extended,permit,tcp,host 128.107.212.162,,host 171.71.184.6,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.212.162 host 171.71.184.6 eq ldap 
+110,454,extended,permit,tcp,host 128.107.212.162,,host 171.71.184.6,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.212.162 host 171.71.184.6 eq ldaps 
+110,455,extended,permit,tcp,host 128.107.212.162,,host 64.102.9.230,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.212.162 host 64.102.9.230 eq ldap 
+110,456,extended,permit,tcp,host 128.107.212.162,,host 64.102.9.230,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.212.162 host 64.102.9.230 eq ldaps 
+110,457,extended,permit,tcp,host 128.107.212.162,,host 72.163.57.6,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.212.162 host 72.163.57.6 eq ldap 
+110,458,extended,permit,tcp,host 128.107.212.162,,host 72.163.57.6,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.212.162 host 72.163.57.6 eq ldaps 
+110,459,extended,permit,tcp,host 128.107.212.163,,host 171.68.224.207,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.212.163 host 171.68.224.207 eq ldap 
+110,460,extended,permit,tcp,host 128.107.212.163,,host 171.68.224.207,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.212.163 host 171.68.224.207 eq ldaps 
+110,461,extended,permit,tcp,host 128.107.212.163,,host 171.71.184.6,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.212.163 host 171.71.184.6 eq ldap 
+110,462,extended,permit,tcp,host 128.107.212.163,,host 171.71.184.6,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.212.163 host 171.71.184.6 eq ldaps 
+110,463,extended,permit,tcp,host 128.107.212.163,,host 64.102.9.230,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.212.163 host 64.102.9.230 eq ldap 
+110,464,extended,permit,tcp,host 128.107.212.163,,host 64.102.9.230,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.212.163 host 64.102.9.230 eq ldaps 
+110,465,extended,permit,tcp,host 128.107.212.163,,host 72.163.57.6,eq ldap,,,,,access-list 110 extended permit tcp host 128.107.212.163 host 72.163.57.6 eq ldap 
+110,466,extended,permit,tcp,host 128.107.212.163,,host 72.163.57.6,eq ldaps,,,,,access-list 110 extended permit tcp host 128.107.212.163 host 72.163.57.6 eq ldaps 
+110,467,extended,permit,udp,host 128.107.225.22,,host 172.17.153.17,eq snmp,,,,,access-list 110 extended permit udp host 128.107.225.22 host 172.17.153.17 eq snmp 
+110,468,extended,permit,udp,host 128.107.225.22,,host 172.17.153.18,eq snmp,,,,,access-list 110 extended permit udp host 128.107.225.22 host 172.17.153.18 eq snmp 
+110,469,extended,permit,udp,host 64.102.245.251,,173.37.95.192 255.255.255.192,eq snmp,,,,,access-list 110 extended permit udp host 64.102.245.251 173.37.95.192 255.255.255.192 eq snmp 
+110,470,extended,permit,udp,host 64.102.245.252,,173.37.95.192 255.255.255.192,eq snmp,,,,,access-list 110 extended permit udp host 64.102.245.252 173.37.95.192 255.255.255.192 eq snmp 
+110,471,extended,permit,udp,host 64.102.245.251,eq snmp,173.37.95.192 255.255.255.192,  ,,,,,access-list 110 extended permit udp host 64.102.245.251 eq snmp 173.37.95.192 255.255.255.192 
+110,472,extended,permit,udp,host 64.102.245.252,eq snmp,173.37.95.192 255.255.255.192,  ,,,,,access-list 110 extended permit udp host 64.102.245.252 eq snmp 173.37.95.192 255.255.255.192 
+110,473,extended,permit,tcp,any,,172.17.153.160 255.255.255.224,eq ssh ,,,,,access-list 110 extended permit tcp any 172.17.153.160 255.255.255.224 eq ssh 
+110,474,extended,permit,udp,host 64.103.26.92,,host 10.52.207.254,eq snmptrap,,,,,access-list 110 extended permit udp host 64.103.26.92 host 10.52.207.254 eq snmptrap 
+110,475,extended,permit,udp,host 64.103.26.93,,host 10.52.207.254,eq snmptrap,,,,,access-list 110 extended permit udp host 64.103.26.93 host 10.52.207.254 eq snmptrap 
+110,476,extended,permit,udp,host 64.103.26.94,,host 10.52.207.254,eq snmptrap,,,,,access-list 110 extended permit udp host 64.103.26.94 host 10.52.207.254 eq snmptrap 
+110,477,extended,permit,udp,host 64.103.26.92,,host 144.254.240.11,eq snmptrap,,,,,access-list 110 extended permit udp host 64.103.26.92 host 144.254.240.11 eq snmptrap 
+110,478,extended,permit,udp,host 64.103.26.93,,host 144.254.240.11,eq snmptrap,,,,,access-list 110 extended permit udp host 64.103.26.93 host 144.254.240.11 eq snmptrap 
+110,479,extended,permit,udp,host 64.103.26.94,,host 144.254.240.11,eq snmptrap,,,,,access-list 110 extended permit udp host 64.103.26.94 host 144.254.240.11 eq snmptrap 
+110,480,extended,permit,gre,host 64.103.36.241,,host 144.254.143.73,,,,,,access-list 110 extended permit gre host 64.103.36.241 host 144.254.143.73 
+110,481,extended,permit,gre,host 64.103.36.241,,host 10.144.0.1,,,,,,access-list 110 extended permit gre host 64.103.36.241 host 10.144.0.1 
+110,482,extended,permit,gre,host 64.102.254.10,,host 10.83.6.114,,,,,,access-list 110 extended permit gre host 64.102.254.10 host 10.83.6.114 
+110,483,extended,permit,tcp,host 144.254.51.74,,host 171.68.47.128,eq 1688,,,,,access-list 110 extended permit tcp host 144.254.51.74 host 171.68.47.128 eq 1688 
+110,484,extended,permit,udp,host 64.104.94.175,,any,range 1024 65535,,,,,access-list 110 extended permit udp host 64.104.94.175 any range 1024 65535 
+110,485,extended,permit,udp,host 128.107.83.77,,any,range 1024 65535,,,,,access-list 110 extended permit udp host 128.107.83.77 any range 1024 65535 
+110,486,extended,permit,tcp,host 128.107.83.76,,host 10.35.16.101,eq 2000,,,,,access-list 110 extended permit tcp host 128.107.83.76 host 10.35.16.101 eq 2000 
+110,487,extended,permit,tcp,host 128.107.83.76,,host 10.35.16.101,eq 2443,,,,,access-list 110 extended permit tcp host 128.107.83.76 host 10.35.16.101 eq 2443 
+110,488,extended,permit,tcp,host 128.107.83.76,,host 10.35.16.101,eq sip,,,,,access-list 110 extended permit tcp host 128.107.83.76 host 10.35.16.101 eq sip 
+110,489,extended,permit,tcp,host 128.107.83.76,,host 10.35.16.101,eq 5061,,,,,access-list 110 extended permit tcp host 128.107.83.76 host 10.35.16.101 eq 5061 
+110,490,extended,permit,tcp,host 128.107.83.75,,host 10.35.16.101,eq 3804,,,,,access-list 110 extended permit tcp host 128.107.83.75 host 10.35.16.101 eq 3804 
+110,491,extended,permit,udp,host 128.107.83.75,,host 10.35.16.101,eq tftp,,,,,access-list 110 extended permit udp host 128.107.83.75 host 10.35.16.101 eq tftp 
+110,492,extended,permit,gre,host 128.107.235.30,,171.68.144.8 255.255.255.248,,,,,,access-list 110 extended permit gre host 128.107.235.30 171.68.144.8 255.255.255.248 
+110,493,extended,permit,udp,host 128.107.85.180,,any,range 16384 32768,,,,,access-list 110 extended permit udp host 128.107.85.180 any range 16384 32768 
+110,494,extended,permit,udp,host 128.107.85.180,,any,eq 1967 ,,,,,access-list 110 extended permit udp host 128.107.85.180 any eq 1967 
+110,495,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.151,range sip 5061,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.151 range sip 5061 
+110,496,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.152,range sip 5061,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.152 range sip 5061 
+110,497,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.153,range sip 5061,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.153 range sip 5061 
+110,498,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.154,range sip 5061,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.154 range sip 5061 
+110,499,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.155,range sip 5061,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.155 range sip 5061 
+110,500,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.156,range sip 5061,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.156 range sip 5061 
+110,501,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.117,range sip 5061,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.117 range sip 5061 
+110,502,extended,permit,tcp,host 128.107.85.171,,host 10.35.48.118,range sip 5061,,,,,access-list 110 extended permit tcp host 128.107.85.171 host 10.35.48.118 range sip 5061 
+110,503,extended,permit,tcp,72.163.218.240 255.255.255.240,,host 10.76.96.192,eq www,,,,,access-list 110 extended permit tcp 72.163.218.240 255.255.255.240 host 10.76.96.192 eq www 
+110,504,extended,permit,tcp,72.163.218.240 255.255.255.240,,host 10.76.96.182,eq www,,,,,access-list 110 extended permit tcp 72.163.218.240 255.255.255.240 host 10.76.96.182 eq www 
+110,505,extended,permit,tcp,72.163.218.240 255.255.255.240,,host 10.76.96.209,eq www,,,,,access-list 110 extended permit tcp 72.163.218.240 255.255.255.240 host 10.76.96.209 eq www 
+110,506,extended,permit,tcp,72.163.218.240 255.255.255.240,,host 10.76.96.192,eq https,,,,,access-list 110 extended permit tcp 72.163.218.240 255.255.255.240 host 10.76.96.192 eq https 
+110,507,extended,permit,tcp,72.163.218.240 255.255.255.240,,host 10.76.96.182,eq https,,,,,access-list 110 extended permit tcp 72.163.218.240 255.255.255.240 host 10.76.96.182 eq https 
+110,508,extended,permit,tcp,72.163.218.240 255.255.255.240,,host 10.76.96.209,eq https,,,,,access-list 110 extended permit tcp 72.163.218.240 255.255.255.240 host 10.76.96.209 eq https 
+110,509,extended,permit,tcp,any,,host 171.70.192.77,eq www ,,,,,access-list 110 extended permit tcp any host 171.70.192.77 eq www 
+110,510,extended,permit,tcp,any,,host 171.70.192.77,eq https ,,,,,access-list 110 extended permit tcp any host 171.70.192.77 eq https 
+110,511,extended,permit,tcp,any,,host 171.70.192.78,eq www ,,,,,access-list 110 extended permit tcp any host 171.70.192.78 eq www 
+110,512,extended,permit,tcp,any,,host 171.70.192.78,eq https ,,,,,access-list 110 extended permit tcp any host 171.70.192.78 eq https 
+110,513,extended,permit,tcp,any,,host 171.70.192.79,eq www ,,,,,access-list 110 extended permit tcp any host 171.70.192.79 eq www 
+110,514,extended,permit,tcp,any,,host 171.70.192.79,eq https ,,,,,access-list 110 extended permit tcp any host 171.70.192.79 eq https 
+110,515,extended,permit,tcp,host 64.103.37.170,,host 173.37.178.201,eq https,,,,,access-list 110 extended permit tcp host 64.103.37.170 host 173.37.178.201 eq https 
+110,516,extended,permit,udp,host 128.107.81.144,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 128.107.81.144 host 10.35.16.41 eq 2055 
+110,517,extended,permit,udp,host 128.107.81.145,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 128.107.81.145 host 10.35.16.41 eq 2055 
+110,518,extended,permit,udp,host 128.107.241.119,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 128.107.241.119 host 10.35.16.41 eq 2055 
+110,519,extended,permit,udp,host 128.107.233.36,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 128.107.233.36 host 10.35.16.41 eq 2055 
+110,520,extended,permit,udp,host 128.107.85.130,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 128.107.85.130 host 10.35.16.41 eq 2055 
+110,521,extended,permit,udp,host 128.107.85.196,,host 10.35.16.41,eq 2055,,,,,access-list 110 extended permit udp host 128.107.85.196 host 10.35.16.41 eq 2055 
+110,522,extended,permit,udp,host 64.103.26.170,,any,range 1024 65535,,,,,access-list 110 extended permit udp host 64.103.26.170 any range 1024 65535 
+110,523,extended,permit,tcp,host 128.107.250.226,,172.27.204.0 255.255.255.0,eq 5443,,,,,access-list 110 extended permit tcp host 128.107.250.226 172.27.204.0 255.255.255.0 eq 5443 
+110,524,extended,permit,tcp,host 128.107.250.226,,172.27.204.0 255.255.255.0,eq 9080,,,,,access-list 110 extended permit tcp host 128.107.250.226 172.27.204.0 255.255.255.0 eq 9080 
+110,525,extended,permit,tcp,host 128.107.250.226,,172.27.204.0 255.255.255.0,eq 2195,,,,,access-list 110 extended permit tcp host 128.107.250.226 172.27.204.0 255.255.255.0 eq 2195 
+110,526,extended,permit,tcp,any,,host 128.107.83.91,eq 5443 ,,,,,access-list 110 extended permit tcp any host 128.107.83.91 eq 5443 
+110,527,extended,permit,tcp,any,,host 128.107.83.91,eq 9080 ,,,,,access-list 110 extended permit tcp any host 128.107.83.91 eq 9080 
+110,528,extended,permit,tcp,any,,host 128.107.83.91,eq ssh ,,,,,access-list 110 extended permit tcp any host 128.107.83.91 eq ssh 
+110,529,extended,permit,tcp,host 128.107.83.123,,host 10.35.16.131,eq 5443,,,,,access-list 110 extended permit tcp host 128.107.83.123 host 10.35.16.131 eq 5443 
+110,530,extended,permit,tcp,host 128.107.83.123,,host 10.35.16.131,eq 9080,,,,,access-list 110 extended permit tcp host 128.107.83.123 host 10.35.16.131 eq 9080 
+110,531,extended,permit,tcp,host 128.107.234.204,,host 171.68.46.129,eq smtp,,,,,access-list 110 extended permit tcp host 128.107.234.204 host 171.68.46.129 eq smtp 
+110,532,extended,permit,tcp,host 128.107.234.205,,host 171.68.46.129,eq smtp,,,,,access-list 110 extended permit tcp host 128.107.234.205 host 171.68.46.129 eq smtp 
+110,533,extended,permit,tcp,host 128.107.234.206,,host 171.68.46.129,eq smtp,,,,,access-list 110 extended permit tcp host 128.107.234.206 host 171.68.46.129 eq smtp 
+110,534,extended,permit,tcp,host 128.107.234.207,,host 171.68.46.129,eq smtp,,,,,access-list 110 extended permit tcp host 128.107.234.207 host 171.68.46.129 eq smtp 
+110,535,extended,permit,tcp,host 128.107.83.68,,host 171.70.121.65,eq 5003,,,,,access-list 110 extended permit tcp host 128.107.83.68 host 171.70.121.65 eq 5003 
+110,536,extended,permit,tcp,host 128.107.83.68,,host 171.70.121.65,eq 5005,,,,,access-list 110 extended permit tcp host 128.107.83.68 host 171.70.121.65 eq 5005 
+110,537,extended,permit,tcp,host 128.107.83.69,,host 171.70.121.65,eq 5003,,,,,access-list 110 extended permit tcp host 128.107.83.69 host 171.70.121.65 eq 5003 
+110,538,extended,permit,tcp,host 128.107.83.69,,host 171.70.121.65,eq 5005,,,,,access-list 110 extended permit tcp host 128.107.83.69 host 171.70.121.65 eq 5005 
+110,539,extended,permit,tcp,host 128.107.237.43,,host 144.254.15.111,eq 1410,,,,,access-list 110 extended permit tcp host 128.107.237.43 host 144.254.15.111 eq 1410 
+110,540,extended,permit,tcp,host 128.107.237.43,,host 144.254.15.111,eq sqlnet,,,,,access-list 110 extended permit tcp host 128.107.237.43 host 144.254.15.111 eq sqlnet 
+110,541,extended,permit,tcp,host 128.107.237.43,,host 144.254.15.111,eq 1526,,,,,access-list 110 extended permit tcp host 128.107.237.43 host 144.254.15.111 eq 1526 

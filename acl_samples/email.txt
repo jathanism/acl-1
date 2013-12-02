@@ -1,0 +1,25 @@
+Hi Zhishou, Hi Zhi,
+
+Attached is the rtp5-corp-fw1.cisco.com configuration, it is an bridged mode ASA, mainly used for ACLs. This firewall is connected to one TenG port on the rtp5-corp-gw1. 
++++
+lingya-mac:~ lingyang$ traceroute rtp5-corp-fw1.cisco.com
+…
+13  rtp5-rbb-gw1-ten4-5.cisco.com (10.112.4.98)  307.161 ms  277.325 ms  307.234 ms
+14  rtp5-corp-gw1-ten0-1-0.cisco.com (10.81.254.194)  307.297 ms  277.164 ms  307.333 ms
+^C
+
+The detail diagram can be viewed via: (the rtp5-corp-gw1 can be located at the up left side of the diagram)
+http://harry.cisco.com/solutions/vpn/cisco-it/ndcs-gno-network-diagrams/rtp/rtp-campus-network-diagram.gif
++++
+
+Should you have any questions feel free to drop me a message. 
+
+Thanks and have a nice weekend!
+--
+Ling YANG
+Stay Hungry, Stay Foolish
+
+
+
+
+

@@ -1,0 +1,31 @@
+ASA Version 8.2(5)13 
+hostname my-test-fw
+
+object-group network multicast_networks-global-1
+ network-object 224.0.0.0 240.0.0.0
+object-group network bogus_networks
+ network-object 0.0.0.0 255.0.0.0
+ network-object 255.0.0.0 255.0.0.0
+
+!access-list 110 extended permit ip host 171.69.10.13 object-group bogus_networks 
+!access-list 110 extended permit udp any object-group multicast_networks-global-1 gt 1023 
+!access-list 110 extended permit 113 any object-group multicast_networks-global-1 
+!access-list 110 extended permit tcp host 64.103.36.150 host 171.71.160.145 eq 13724 
+!access-list 110 extended permit tcp host 64.103.36.150 host 171.71.160.145 gt 13724 
+!access-list 110 extended permit tcp host 64.103.36.150 host 171.71.160.145 eq 3916 
+
+access-list 110 extended permit udp host 10.66.129.135 host 171.71.180.230 range 2055 2065 
+access-list 110 extended permit udp host 10.66.129.136 host 171.71.180.230 range 2055 2065 
+access-list 110 extended permit udp 10.61.32.0 255.255.255.224 host 144.254.226.12 range 2055 2065 
+access-list 110 extended permit udp host 172.17.251.12 host 144.254.226.12 range 2055 2065 
+access-list 110 extended permit udp host 10.59.15.227 host 144.254.226.12 range 2055 2065 
+access-list 110 extended permit udp host 10.56.72.35 host 144.254.226.12 range 2055 2065 
+access-list 110 extended permit udp 10.61.32.0 255.255.255.224 host 144.254.73.99 range 2055 2065 
+access-list 110 extended permit udp host 172.17.251.12 host 144.254.73.99 range 2055 2065 
+access-list 110 extended permit udp host 10.59.15.227 host 144.254.73.99 range 2055 2065 
+access-list 110 extended permit udp host 10.56.72.35 host 144.254.73.99 range 2055 2065 
+
+access-list 110 extended permit udp 193.188.125.80 255.255.255.252 host 171.71.238.13 eq isakmp 
+access-list 110 extended permit udp 193.188.125.80 255.255.255.252 host 171.71.238.13 eq 10000 
+
+

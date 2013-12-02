@@ -1,0 +1,85 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module pMTree</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>pMTree</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/zhil2/acl/src/pMTree.py">/home/zhil2/acl/src/pMTree.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="pMTree.html#PMNode">PMNode</a>
+</font></dt><dt><font face="helvetica, arial"><a href="pMTree.html#PMTree">PMTree</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PMNode">class <strong>PMNode</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#PMNode">PMNode</a>&nbsp;(prefix&nbsp;match&nbsp;node)&nbsp;is&nbsp;the&nbsp;node&nbsp;for&nbsp;<a href="#PMTree">PMTree</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PMNode-__init__"><strong>__init__</strong></a>(self, label)</dt></dl>
+
+<dl><dt><a name="PMNode-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>way&nbsp;1:&nbsp;don't&nbsp;display&nbsp;n/a&nbsp;or&nbsp;unreachable&nbsp;braches</tt></dd></dl>
+
+<dl><dt><a name="PMNode-expand"><strong>expand</strong></a>(self)</dt><dd><tt>expand&nbsp;expands&nbsp;a&nbsp;node&nbsp;by&nbsp;adding&nbsp;two&nbsp;children&nbsp;nodes&nbsp;with&nbsp;the&nbsp;same&nbsp;label&nbsp;as&nbsp;its,&nbsp;<br>
+followed&nbsp;by&nbsp;overwriting&nbsp;its&nbsp;label&nbsp;by&nbsp;'n/a'</tt></dd></dl>
+
+<dl><dt><a name="PMNode-fix"><strong>fix</strong></a>(self, label)</dt><dd><tt>fix&nbsp;fixes&nbsp;the&nbsp;label&nbsp;of&nbsp;the&nbsp;node,&nbsp;and&nbsp;if&nbsp;it&nbsp;has&nbsp;children,&nbsp;trim&nbsp;them</tt></dd></dl>
+
+<dl><dt><a name="PMNode-isConsistent"><strong>isConsistent</strong></a>(self)</dt><dd><tt>isConsistent&nbsp;checks&nbsp;if&nbsp;the&nbsp;children&nbsp;braches&nbsp;have&nbsp;the&nbsp;same&nbsp;decisions.<br>
+(refer&nbsp;to&nbsp;Section&nbsp;IV&nbsp;of&nbsp;TCAM&nbsp;Razor&nbsp;Infocomm&nbsp;paper&nbsp;for&nbsp;definition<br>
+of&nbsp;consistency.)<br>
+if&nbsp;the&nbsp;node&nbsp;has&nbsp;label&nbsp;n/a&nbsp;and&nbsp;has&nbsp;no&nbsp;children,&nbsp;also&nbsp;return&nbsp;false.</tt></dd></dl>
+
+<dl><dt><a name="PMNode-isConsistentAndTrim"><strong>isConsistentAndTrim</strong></a>(self)</dt><dd><tt>isConsistentAndTrim&nbsp;checks&nbsp;if&nbsp;the&nbsp;children&nbsp;braches&nbsp;have&nbsp;the&nbsp;same&nbsp;decisions.&nbsp;<br>
+if&nbsp;the&nbsp;node&nbsp;has&nbsp;label&nbsp;n/a&nbsp;and&nbsp;has&nbsp;no&nbsp;children,&nbsp;also&nbsp;return&nbsp;false.<br>
+At&nbsp;the&nbsp;same&nbsp;time,&nbsp;it&nbsp;tries&nbsp;to&nbsp;trim&nbsp;the&nbsp;tree&nbsp;without&nbsp;affecting&nbsp;the&nbsp;semantics</tt></dd></dl>
+
+<dl><dt><a name="PMNode-isExpanded"><strong>isExpanded</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="PMNode-removeChildren"><strong>removeChildren</strong></a>(self)</dt><dd><tt>removeChildren&nbsp;also&nbsp;returns&nbsp;true&nbsp;if&nbsp;node&nbsp;has&nbsp;children</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PMTree">class <strong>PMTree</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#PMTree">PMTree</a>&nbsp;(prefix&nbsp;match&nbsp;tree)&nbsp;is&nbsp;a&nbsp;binary&nbsp;tree&nbsp;with&nbsp;the&nbsp;following&nbsp;features:<br>
+1)&nbsp;Each&nbsp;terminal&nbsp;node&nbsp;has&nbsp;a&nbsp;label,&nbsp;being&nbsp;one&nbsp;of&nbsp;the&nbsp;decisions&nbsp;(e.g.&nbsp;'permit'&nbsp;or&nbsp;'deny')<br>
+2)&nbsp;Each&nbsp;non-terminal&nbsp;node&nbsp;has&nbsp;a&nbsp;label&nbsp;'n/a'<br>
+3)&nbsp;Each&nbsp;non-terminal&nbsp;node&nbsp;n&nbsp;has&nbsp;two&nbsp;children&nbsp;node&nbsp;l&nbsp;and&nbsp;r.&nbsp;the&nbsp;left&nbsp;edge&nbsp;(n,l)&nbsp;has&nbsp;label&nbsp;<br>
+'0'&nbsp;and&nbsp;the&nbsp;right&nbsp;edge&nbsp;(n,r)&nbsp;has&nbsp;label&nbsp;'1'<br>
+A&nbsp;<a href="#PMTree">PMTree</a>&nbsp;can&nbsp;be&nbsp;constructed&nbsp;via&nbsp;a&nbsp;prefix&nbsp;priority&nbsp;rule&nbsp;set&nbsp;f.&nbsp;For&nbsp;example:<br>
+f&nbsp;=&nbsp;r1:&nbsp;{101***}&nbsp;-&gt;&nbsp;permit<br>
+&nbsp;&nbsp;&nbsp;&nbsp;r2:&nbsp;{0*****}&nbsp;-&gt;&nbsp;permit<br>
+&nbsp;&nbsp;&nbsp;&nbsp;r3:&nbsp;{******}&nbsp;-&gt;&nbsp;deny<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="PMTree-Trim"><strong>Trim</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="PMTree-__init__"><strong>__init__</strong></a>(self, listRule)</dt></dl>
+
+<dl><dt><a name="PMTree-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="PMTree-isConsistent"><strong>isConsistent</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="PMTree-isConsistentIn"><strong>isConsistentIn</strong></a>(self, prefix)</dt></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

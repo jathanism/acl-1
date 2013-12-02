@@ -1,0 +1,36 @@
+1) install setuptools
+
+2) install pip 
+$ curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+$ [sudo] python get-pip.py
+
+3) install python-dev
+sudo apt-get install python-dev
+
+3) sudo pip install trigger
+
+try:
+
+>>> from trigger.acl import parse
+>>> aclobj = parse("""access-list 123 permit tcp any host 10.20.30.40 eq 80""")
+>>> aclobj.terms
+[<Term: None>]
+
+>>> aclobj.name_terms() # Juniper policy terms must have names
+>>> aclobj.terms
+[<Term: T1>]
+>>> print '\n'.join(aclobj.output(format='junos'))
+filter 123 {
+    term T1 {
+        from {
+            destination-address {
+                10.20.30.40/32;
+            }
+            protocol tcp;
+            destination-port 80;
+        }
+        then {
+            accept;
+        }
+    }
+}
